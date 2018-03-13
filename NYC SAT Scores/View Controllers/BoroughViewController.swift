@@ -33,6 +33,7 @@ extension BoroughViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let borough = boroughs[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "Borough Cell", for: indexPath)
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 25, weight: .medium)
         cell.textLabel?.text = borough
         return cell
     }
