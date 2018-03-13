@@ -65,6 +65,7 @@ extension ResultsViewController: UITableViewDelegate, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "School Segue") {
             if let indexPath = self.tableView.indexPathForSelectedRow {
+                //send selectedSchoolDbn, selectedSchool, SchoolInfo based on selected row
                 let schoolVC = segue.destination as? SchoolViewController
                 schoolVC?.selectedSchoolDbn = schools[indexPath.row].dbn
                 schoolVC?.selectedSchool = schools[indexPath.row].school_name

@@ -24,6 +24,7 @@ class SchoolViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //check if network is reachable
         if !NetworkReachabilityManager()!.isReachable {
             showAlert(title: "Error", message: "No internet connection")
             return
@@ -67,9 +68,10 @@ class SchoolViewController: UIViewController {
         }
         ScoreAPIClient.manager.getScores(from: url, completionHandler: completion, errorHandler: {print($0)})
     }
-    func setupUI() {
+    private func setupUI() {
         descriptionTextView.text = "\(schoolInfo.overview_paragraph)"
         phoneNumberLabel.text = "Phone Number: \(schoolInfo.phone_number)"
+        //format career rate to get rid of the extra zeros e.g 0.960000000 -> 0.96
         if let collegeCareerRate = schoolInfo.college_career_rate {
             let collegeStrIndex = collegeCareerRate.index((collegeCareerRate.startIndex), offsetBy:4)
             let formattedCollegeRate = collegeCareerRate.substring(to: collegeStrIndex)
@@ -78,6 +80,7 @@ class SchoolViewController: UIViewController {
             collegeCareerRateLabel.text = "College Career Rate: N/A"
         }
         if let gradRate = schoolInfo.graduation_rate {
+            //format career rate to get rid of the extra zeros e.g 0.960000000 -> 0.96
             let gradRateStrIndex = gradRate.index((gradRate.startIndex), offsetBy:4)
             let formattedGradRate = gradRate.substring(to: gradRateStrIndex)
             

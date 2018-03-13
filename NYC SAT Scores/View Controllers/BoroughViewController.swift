@@ -18,6 +18,7 @@ class BoroughViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        //check if network is reachable
         if !NetworkReachabilityManager()!.isReachable {
             showAlert(title: "Error", message: "No internet connection")
             return
@@ -50,7 +51,6 @@ extension BoroughViewController: UITableViewDataSource, UITableViewDelegate {
             return
         }
         if let resultsVC = segue.destination as? ResultsViewController {
-            //            let formVC = segue.destination as? FormViewController
             switch indexPath.row {
             case 0:
                 selectedBorough = "M"
@@ -71,7 +71,7 @@ extension BoroughViewController: UITableViewDataSource, UITableViewDelegate {
                 print("gdf")
             }
             resultsVC.selectedBorough = selectedBorough
-            //resultsVC.bgImage = boroughs[indexPath.row].1
+            //send selectedBorough code to Results View Controller for api call to get list of schools in selected borough
         }
     }
 }

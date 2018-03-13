@@ -19,15 +19,16 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var scoreTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //check for network reachability
         if !NetworkReachabilityManager()!.isReachable {
             showAlert(title: "Error", message: "No internet connection")
             return
         }
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        //Show top of text view, default is middle of text view
         scoreTextView.setContentOffset(CGPoint.zero, animated: false)
     }
     
@@ -56,6 +57,7 @@ class SearchViewController: UIViewController {
             }
         }
         ScoreAPIClient.manager.getScores(from: url.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!, completionHandler: completion, errorHandler: {print($0)})
+        //added _ white space handling for url
     }
     
     
