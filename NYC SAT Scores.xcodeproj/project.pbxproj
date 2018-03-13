@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC4E273E0E9E5E9E5E847AEB /* Pods_NYC_SAT_Scores.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8645CE40A9AD2DAEFCE1318E /* Pods_NYC_SAT_Scores.framework */; };
+		D2A312BC205775A900262974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A312BB205775A900262974 /* AppDelegate.swift */; };
+		D2A312C1205775A900262974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A312BF205775A900262974 /* Main.storyboard */; };
+		D2A312C3205775A900262974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A312C2205775A900262974 /* Assets.xcassets */; };
+		D2A312C6205775A900262974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A312C4205775A900262974 /* LaunchScreen.storyboard */; };
+		D2A312CE2057762F00262974 /* BoroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A312CD2057762F00262974 /* BoroughViewController.swift */; };
+		D2A312D12057766700262974 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A312D02057766700262974 /* ResultsViewController.swift */; };
+		D2A312D32057769500262974 /* SchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A312D22057769500262974 /* SchoolViewController.swift */; };
+		D2A312D5205776BA00262974 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A312D4205776BA00262974 /* SearchViewController.swift */; };
+		D2A312D8205776E600262974 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A312D7205776E600262974 /* NetworkHelper.swift */; };
+		D2A312DA205776FD00262974 /* SchoolAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A312D9205776FD00262974 /* SchoolAPIClient.swift */; };
+		D2A312DC2057771200262974 /* ScoreAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A312DB2057771200262974 /* ScoreAPIClient.swift */; };
+		D2A312DF2057773400262974 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A312DE2057773400262974 /* School.swift */; };
+		D2A312E12057773D00262974 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A312E02057773D00262974 /* Score.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55930AB24AC94D89F84D6F4B /* Pods-NYC SAT Scores.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC SAT Scores.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NYC SAT Scores/Pods-NYC SAT Scores.debug.xcconfig"; sourceTree = "<group>"; };
+		8645CE40A9AD2DAEFCE1318E /* Pods_NYC_SAT_Scores.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYC_SAT_Scores.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C760927D78A806678FBA699D /* Pods-NYC SAT Scores.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC SAT Scores.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYC SAT Scores/Pods-NYC SAT Scores.release.xcconfig"; sourceTree = "<group>"; };
+		D2A312B8205775A900262974 /* NYC SAT Scores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NYC SAT Scores.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A312BB205775A900262974 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2A312C0205775A900262974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2A312C2205775A900262974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2A312C5205775A900262974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2A312C7205775A900262974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A312CD2057762F00262974 /* BoroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoroughViewController.swift; sourceTree = "<group>"; };
+		D2A312D02057766700262974 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		D2A312D22057769500262974 /* SchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewController.swift; sourceTree = "<group>"; };
+		D2A312D4205776BA00262974 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D2A312D7205776E600262974 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		D2A312D9205776FD00262974 /* SchoolAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAPIClient.swift; sourceTree = "<group>"; };
+		D2A312DB2057771200262974 /* ScoreAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreAPIClient.swift; sourceTree = "<group>"; };
+		D2A312DE2057773400262974 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		D2A312E02057773D00262974 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2A312B5205775A900262974 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC4E273E0E9E5E9E5E847AEB /* Pods_NYC_SAT_Scores.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EC8960A240915F30E3FAB86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8645CE40A9AD2DAEFCE1318E /* Pods_NYC_SAT_Scores.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BCDDAA0C8A80FA7B5488994 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55930AB24AC94D89F84D6F4B /* Pods-NYC SAT Scores.debug.xcconfig */,
+				C760927D78A806678FBA699D /* Pods-NYC SAT Scores.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2A312AF205775A800262974 = {
+			isa = PBXGroup;
+			children = (
+				D2A312BA205775A900262974 /* NYC SAT Scores */,
+				D2A312B9205775A900262974 /* Products */,
+				7BCDDAA0C8A80FA7B5488994 /* Pods */,
+				1EC8960A240915F30E3FAB86 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D2A312B9205775A900262974 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2A312B8205775A900262974 /* NYC SAT Scores.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2A312BA205775A900262974 /* NYC SAT Scores */ = {
+			isa = PBXGroup;
+			children = (
+				D2A312BB205775A900262974 /* AppDelegate.swift */,
+				D2A312DD2057772000262974 /* Models */,
+				D2A312D6205776CE00262974 /* Services */,
+				D2A312CF2057765500262974 /* View Controllers */,
+				D2A312BF205775A900262974 /* Main.storyboard */,
+				D2A312C2205775A900262974 /* Assets.xcassets */,
+				D2A312C4205775A900262974 /* LaunchScreen.storyboard */,
+				D2A312C7205775A900262974 /* Info.plist */,
+			);
+			path = "NYC SAT Scores";
+			sourceTree = "<group>";
+		};
+		D2A312CF2057765500262974 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2A312CD2057762F00262974 /* BoroughViewController.swift */,
+				D2A312D02057766700262974 /* ResultsViewController.swift */,
+				D2A312D22057769500262974 /* SchoolViewController.swift */,
+				D2A312D4205776BA00262974 /* SearchViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D2A312D6205776CE00262974 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D2A312D7205776E600262974 /* NetworkHelper.swift */,
+				D2A312D9205776FD00262974 /* SchoolAPIClient.swift */,
+				D2A312DB2057771200262974 /* ScoreAPIClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D2A312DD2057772000262974 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2A312DE2057773400262974 /* School.swift */,
+				D2A312E02057773D00262974 /* Score.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2A312B7205775A900262974 /* NYC SAT Scores */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2A312CA205775A900262974 /* Build configuration list for PBXNativeTarget "NYC SAT Scores" */;
+			buildPhases = (
+				835EDF338EA9E1A6E5C29989 /* [CP] Check Pods Manifest.lock */,
+				D2A312B4205775A900262974 /* Sources */,
+				D2A312B5205775A900262974 /* Frameworks */,
+				D2A312B6205775A900262974 /* Resources */,
+				D2B95EA4EA94F59981099A5B /* [CP] Embed Pods Frameworks */,
+				4969525243D9B72CA8DE175A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NYC SAT Scores";
+			productName = "NYC SAT Scores";
+			productReference = D2A312B8205775A900262974 /* NYC SAT Scores.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2A312B0205775A800262974 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Lisa J";
+				TargetAttributes = {
+					D2A312B7205775A900262974 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D2A312B3205775A800262974 /* Build configuration list for PBXProject "NYC SAT Scores" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2A312AF205775A800262974;
+			productRefGroup = D2A312B9205775A900262974 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2A312B7205775A900262974 /* NYC SAT Scores */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2A312B6205775A900262974 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A312C6205775A900262974 /* LaunchScreen.storyboard in Resources */,
+				D2A312C3205775A900262974 /* Assets.xcassets in Resources */,
+				D2A312C1205775A900262974 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4969525243D9B72CA8DE175A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NYC SAT Scores/Pods-NYC SAT Scores-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		835EDF338EA9E1A6E5C29989 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYC SAT Scores-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2B95EA4EA94F59981099A5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NYC SAT Scores/Pods-NYC SAT Scores-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NYC SAT Scores/Pods-NYC SAT Scores-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2A312B4205775A900262974 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A312D5205776BA00262974 /* SearchViewController.swift in Sources */,
+				D2A312D32057769500262974 /* SchoolViewController.swift in Sources */,
+				D2A312BC205775A900262974 /* AppDelegate.swift in Sources */,
+				D2A312DA205776FD00262974 /* SchoolAPIClient.swift in Sources */,
+				D2A312E12057773D00262974 /* Score.swift in Sources */,
+				D2A312DF2057773400262974 /* School.swift in Sources */,
+				D2A312DC2057771200262974 /* ScoreAPIClient.swift in Sources */,
+				D2A312CE2057762F00262974 /* BoroughViewController.swift in Sources */,
+				D2A312D8205776E600262974 /* NetworkHelper.swift in Sources */,
+				D2A312D12057766700262974 /* ResultsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D2A312BF205775A900262974 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2A312C0205775A900262974 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2A312C4205775A900262974 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2A312C5205775A900262974 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2A312C8205775A900262974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2A312C9205775A900262974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2A312CB205775A900262974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55930AB24AC94D89F84D6F4B /* Pods-NYC SAT Scores.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "NYC SAT Scores/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lisa-j.NYC-SAT-Scores";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2A312CC205775A900262974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C760927D78A806678FBA699D /* Pods-NYC SAT Scores.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "NYC SAT Scores/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lisa-j.NYC-SAT-Scores";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2A312B3205775A800262974 /* Build configuration list for PBXProject "NYC SAT Scores" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A312C8205775A900262974 /* Debug */,
+				D2A312C9205775A900262974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2A312CA205775A900262974 /* Build configuration list for PBXNativeTarget "NYC SAT Scores" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A312CB205775A900262974 /* Debug */,
+				D2A312CC205775A900262974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2A312B0205775A800262974 /* Project object */;
+}
